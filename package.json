@@ -1,9 +1,9 @@
 {
-  "name": "@shelf/wysiwyg-editor-s3-signature",
+  "name": "@shelf/froala-image-upload-s3-signature",
   "version": "0.1.0",
   "description": "Get S3 signature for Froala editor with configurable expiration time",
   "license": "MIT",
-  "repository": "shelfio/wysiwyg-editor-s3-signature",
+  "repository": "shelfio/froala-image-upload-s3-signature",
   "author": {
     "name": "Vitalii Sikora",
     "email": "vitalii@shelf.io",
