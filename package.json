@@ -4,6 +4,9 @@
   "description": "Get S3 signature for Froala editor with configurable expiration time",
   "license": "MIT",
   "repository": "shelfio/froala-image-upload-s3-signature",
+  "publishConfig": {
+    "access": "public"
+  },
   "author": {
     "name": "Vitalii Sikora",
     "email": "vitalii@shelf.io",
