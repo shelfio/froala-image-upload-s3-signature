@@ -1,0 +1,62 @@
+{
+  "name": "@shelf/wysiwyg-editor-s3-signature",
+  "version": "0.1.0",
+  "description": "Get S3 signature for Froala editor with configurable expiration time",
+  "license": "MIT",
+  "repository": "shelfio/wysiwyg-editor-s3-signature",
+  "author": {
+    "name": "Vitalii Sikora",
+    "email": "vitalii@shelf.io",
+    "url": "shelf.io"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "scripts": {
+    "build": "rm -rf lib/ && yarn build:types && babel src --out-dir lib --ignore '*.test.ts' --extensions '.ts' --copy-files",
+    "build:types": "tsc --emitDeclarationOnly --declaration --isolatedModules false --allowJs false --declarationDir lib",
+    "coverage": "jest --coverage",
+    "lint:ci": "eslint src/**/*.ts --cache",
+    "prepack": "yarn build",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "npm run type-check -- --watch"
+  },
+  "main": "lib",
+  "files": [
+    "lib"
+  ],
+  "types": "lib/index.d.ts",
+  "keywords": [
+    "wysiwyg-editor",
+    "s3-signature",
+    "froala"
+  ],
+  "devDependencies": {
+    "@babel/cli": "7.4.4",
+    "@babel/core": "7.4.5",
+    "@babel/preset-env": "7.4.5",
+    "@babel/preset-typescript": "7.3.3",
+    "@shelf/eslint-config": "0.3.5",
+    "@types/node": "12.0.2",
+    "eslint": "5.16.0",
+    "husky": "2.3.0",
+    "lint-staged": "8.1.7",
+    "prettier": "1.17.1",
+    "typescript": "3.4.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{html,json,md,yml}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
