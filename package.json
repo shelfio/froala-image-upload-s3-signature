@@ -36,9 +36,9 @@
   ],
   "devDependencies": {
     "@babel/cli": "7.8.4",
-    "@babel/core": "7.8.6",
-    "@babel/preset-env": "7.8.6",
-    "@babel/preset-typescript": "7.8.3",
+    "@babel/core": "7.9.0",
+    "@babel/preset-env": "7.9.0",
+    "@babel/preset-typescript": "7.9.0",
     "@shelf/eslint-config": "0.14.2",
     "@types/node": "8",
     "eslint": "6.8.0",
