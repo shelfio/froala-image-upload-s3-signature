@@ -41,10 +41,10 @@
     "@babel/preset-typescript": "7.9.0",
     "@shelf/eslint-config": "0.14.2",
     "@types/node": "8",
-    "eslint": "6.8.0",
+    "eslint": "7.1.0",
     "husky": "4.2.5",
     "lint-staged": "10.2.2",
-    "prettier": "1.19.1",
+    "prettier": "2.0.5",
     "typescript": "3.8.3"
   },
   "husky": {
