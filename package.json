@@ -39,7 +39,7 @@
     "@babel/core": "7.17.5",
     "@babel/preset-env": "7.16.11",
     "@babel/preset-typescript": "7.16.7",
-    "@shelf/eslint-config": "0.18.0",
+    "@shelf/eslint-config": "0.29.0",
     "@types/node": "8",
     "eslint": "7.1.0",
     "husky": "4.2.5",
