@@ -2,19 +2,23 @@
   "name": "@shelf/froala-image-upload-s3-signature",
   "version": "1.0.1",
   "description": "Get S3 signature for Froala editor with configurable expiration time",
-  "license": "MIT",
+  "keywords": [
+    "wysiwyg-editor",
+    "s3-signature",
+    "froala"
+  ],
   "repository": "shelfio/froala-image-upload-s3-signature",
-  "publishConfig": {
-    "access": "public"
-  },
+  "license": "MIT",
   "author": {
     "name": "Vitalii Sikora",
     "email": "vitalii@shelf.io",
     "url": "shelf.io"
   },
-  "engines": {
-    "node": ">=8"
-  },
+  "main": "lib",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "build": "rm -rf lib/ && yarn build:types && yarn build:code",
     "build:code": "babel src --out-dir lib --ignore '**/*.test.ts' --extensions '.ts' && find ./lib -name '*.test.d.ts' -delete",
@@ -27,16 +31,14 @@
     "type-check": "tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch"
   },
-  "main": "lib",
-  "files": [
-    "lib"
-  ],
-  "types": "lib/index.d.ts",
-  "keywords": [
-    "wysiwyg-editor",
-    "s3-signature",
-    "froala"
-  ],
+  "lint-staged": {
+    "*.{html,md,yml}": [
+      "prettier --write"
+    ],
+    "*.{js,ts,json}": [
+      "eslint --fix"
+    ]
+  },
   "devDependencies": {
     "@babel/cli": "7.17.6",
     "@babel/core": "7.17.8",
@@ -50,14 +52,10 @@
     "prettier": "2.6.2",
     "typescript": "4.6.3"
   },
-  "lint-staged": {
-    "*.{js,ts}": [
-      "eslint --fix",
-      "git add"
-    ],
-    "*.{html,json,md,yml}": [
-      "prettier --write",
-      "git add"
-    ]
+  "engines": {
+    "node": ">=8"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
