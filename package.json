@@ -48,7 +48,7 @@
     "@shelf/babel-config": "0.1.8",
     "@shelf/eslint-config": "2.19.3",
     "@types/node": "14",
-    "eslint": "8.19.0",
+    "eslint": "8.20.0",
     "husky": "8.0.1",
     "lint-staged": "13.0.3",
     "prettier": "2.7.1",
