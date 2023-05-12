@@ -43,10 +43,10 @@
     "extends": "@shelf/babel-config/backend"
   },
   "devDependencies": {
-    "@babel/cli": "7.21.0",
-    "@babel/core": "7.21.3",
+    "@babel/cli": "7.21.5",
+    "@babel/core": "7.21.8",
     "@shelf/babel-config": "0.1.8",
-    "@shelf/eslint-config": "2.29.0",
+    "@shelf/eslint-config": "2.29.1",
     "@types/node": "14",
     "eslint": "8.40.0",
     "husky": "8.0.3",
