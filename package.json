@@ -45,7 +45,7 @@
   "devDependencies": {
     "@babel/cli": "7.21.5",
     "@babel/core": "7.21.8",
-    "@shelf/babel-config": "0.1.8",
+    "@shelf/babel-config": "1.2.0",
     "@shelf/eslint-config": "2.29.1",
     "@types/node": "14",
     "eslint": "8.40.0",
